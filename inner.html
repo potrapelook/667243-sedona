@@ -19,8 +19,43 @@
 		</nav>				
 	</header>
 	<main>
-	<!-- Неизвестная форма -->
-		<img src="img/filter background-inner-min.png" width="1200" height="220">
+	<form action="#" method="post" class="hotels-form">
+		<div class="infrastructure">
+			<p class="infrastructure-title">Инфраструктура:</p>
+				<input type="checkbox" name="swimming-pool" id="pool">
+					<label for="pool">Бассейн</label><br>
+				<input type="checkbox" name="parking-place" id="parking">
+					<label for="parking">Парковка</label><br>
+				<input type="checkbox" name="wi-fi-checked" id="wi-fi">
+					<label for="wi-fi">Wi-Fi</label>
+		</div>
+		<div class="house-type">
+			<p class="house-type-title">Тип Жилья:</p>
+				<input type="checkbox" name="hotel" id="hotel-type">
+					<label for="hotel-type"">Гостиница</label><br>
+				<input type="checkbox" name="motel" id="motel-type">
+					<label for="motel-type">Мотель</label><br>
+				<input type="checkbox" name="apartment" id="apartment-type">
+					<label for="apartment-type">Апартаменты</label>
+		</div>
+		<div class="price-per-day">
+			<p class="price-per-day-title">Стоимость в сутки (р):</p>
+			<div class="range-1">
+				<input type="text" name="from" id="price-1">
+					<label for="price-1">От</label>
+			</div>
+			<div class="range-2">
+				<input type="text" name="to" id="price-2">
+					<label for="price-2">До</label>
+			</div>
+			<div class="scale">
+				<button class="scale-button-1" type="button">От</button>
+					<input type="range" min="0" max="99999">
+				<button class="scale-button-2" type="button">До</button>
+			</div>
+		</div>
+	</form>
+		
 	<div class="sorting"> 
 		<div class="sorting-find">Найдено: 3</div>
 		<!-- думаю, что следует сделать Найдено тегом <div>, а не <h1> т.к. потом он будет как-то связан с сортировокой, но пока не знаю как -->
